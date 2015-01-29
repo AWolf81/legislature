@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Are you reflected in the Manitoba legislature?</title>
+	<title>Legislature App | Brandon Sun</title>
 	<meta name="description" content="Brandon Sun's new leglislature app.">
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico" />
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -81,8 +81,8 @@
 		</figcaption>
 
 		<!-- This will be for the charts -->
-		<figure>
-		</figure>
+		<canvas id="myChart" width="400" height="400">
+		</canvas>
 	</main>
 
 	<!-- This will be for the sidebar -->
@@ -133,14 +133,16 @@
 	<footer>
 		<img src="assets/img/brandonsunlogo.png" alt="" class="logo">
 		<p class="new">Thanks for checking out the Brandon Sun's new legislature app. Let us know what you think.</p>
-		<p class="credits">Thanks for checking out the Brandon Sun's new legislature app. Let us know what you think.</p>
+		<p class="credits"><strong>Team:</strong> Graeme Bruce, Colin Corneau, Andrew Nguyen, Tyler Stephens </p>
 		<a href=""><p class="feedback">Give us feedback</p></a>
 		<div class="crossContainer">
 			<svg class="cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
 				<path d="M52.828,50l28.586-28.586c0.781-0.781,0.781-2.047,0-2.828c-0.78-0.781-2.048-0.781-2.828,0L50,47.172L21.414,18.586  c-0.78-0.781-2.048-0.781-2.828,0c-0.781,0.781-0.781,2.047,0,2.828L47.172,50L18.586,78.586c-0.781,0.781-0.781,2.047,0,2.828  C18.976,81.805,19.488,82,20,82s1.024-0.195,1.414-0.586L50,52.828l28.586,28.586C78.976,81.805,79.488,82,80,82  s1.024-0.195,1.414-0.586c0.781-0.781,0.781-2.047,0-2.828L52.828,50z"/>
 			</div><!-- /.cross -->
 		</footer>
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/chart.js"></script>
 	</body>
 	</html>

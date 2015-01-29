@@ -1,0 +1,47 @@
+/*----------------------------------
+COMPARE
+----------------------------------*/
+.shrunk {
+	@include sansLight;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.selected {
+	background: $blue;
+	border: 2px solid $blue;
+	color: #fff;
+	width: 30%;
+}
+
+.sidebar {
+	width: 22%;
+}
+
+// This section is pretty fucked up
+.optionSidebar {
+	// background: #fff;
+	// color: $grey;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	border: 2px solid $lightGrey;
+	padding: 10px;
+	// width: 7%;
+	border-radius: 65rem;
+	text-align: center;
+	display: inline-block;
+	margin: 3px;
+
+	&:hover {
+		@include transitions;
+		background: $blue;
+		border: 2px solid $blue;
+		color: #fff;
+
+	}
+}
+
+.sidebarAdjusted {
+	width: 47.5%;
+}

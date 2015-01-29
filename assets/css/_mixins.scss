@@ -1,0 +1,48 @@
+/*----------------------------------
+MIXINS
+----------------------------------*/
+
+// Transitions
+@mixin transitions {
+	transition: 0.75s;
+	-webkit-transition: 0.75s;
+	-moz-transition: 0.75s;
+	-ms-transition: 0.75s;
+}
+
+// Fonts
+@mixin serifBold {
+	color: $black;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+}
+
+@mixin serifNormal {
+	color: $black;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+}
+
+@mixin serifLight {
+	color: $black;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+}
+
+@mixin sansNormal {
+	color: $grey;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+@mixin sansLight {
+	color: $grey;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+@mixin sansLightBlack {
+	color: $black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}

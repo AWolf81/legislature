@@ -1,0 +1,17 @@
+/*----------------------------------
+INTRO
+----------------------------------*/
+.intro {
+	padding-bottom: 50px;
+	padding-left: 20px;
+}
+
+.teaser {
+	@include serifNormal;
+	font-size: 1.6rem;
+	line-height: 24px;
+	width: 41%;
+	float: left;
+	position: relative;
+	top: 40px;
+}

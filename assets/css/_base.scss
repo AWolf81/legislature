@@ -1,0 +1,42 @@
+/*----------------------------------
+BASE STYLES
+----------------------------------*/
+html {
+  font-size: 62.5%; /* 10px browser default */
+}
+
+h1 {
+	@include serifBold;
+	font-size: 6rem;
+	line-height: 60px;
+	width: 45%;
+	padding-left: 30px;
+	margin-right: 50px;
+	float: left;
+}
+
+h2 {
+	@include serifBold;
+	font-size: 3.2rem;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+h3 {
+	@include serifBold;
+	font-size: 2.4rem;
+	margin: 0px;
+}
+
+p {
+
+}
+
+a {
+	color: darken($yellow, 10%);
+	text-decoration: none;
+	&:hover {
+		@include transitions;
+		color: darken($yellow, 5%);
+	}
+}

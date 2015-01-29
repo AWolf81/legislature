@@ -1,0 +1,49 @@
+/*----------------------------------
+OTHERS
+----------------------------------*/
+.others {
+	padding-top: 20px;
+}
+
+.mapContainer {
+	text-align: center;
+	padding: 20px 0px 40px 0px
+}
+
+.number {
+	color: $blue;
+	font-size: 6.4rem;
+	padding: 5px;
+}
+
+.fa {
+	color: $black;
+	width: 32px;
+	height: 32px;
+	border: 1px solid $black;
+	border-radius: 50%;
+	&:hover {
+		@include transitions;
+		background: $yellow;
+		cursor: pointer;
+	}
+}
+
+.fa-twitter {
+	padding: 5px 5px 5px 6.5px;
+}
+
+.fa-facebook {
+	padding: 5px 5px 5px 8px;
+}
+
+.special {
+	@include sansLight;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+canvas {
+	border: 1px solid red;
+}

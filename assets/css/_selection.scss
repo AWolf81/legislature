@@ -1,0 +1,49 @@
+/*----------------------------------
+SELECTION
+----------------------------------*/
+.selection {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.bold {
+	@include serifBold;
+	font-size: 2.4rem;
+	display: inline;
+	padding: 5px;
+}
+
+.selectionWrapper {
+	display: inline;
+	border-bottom: 1px dotted $dotted;
+	padding-bottom: 18px;
+}
+
+.option {
+	@include sansNormal;
+	background: #fff;
+	font-size: 1.5rem;
+	border: 2px solid $lightGrey;
+	padding: 8px;
+	width: 7.5%;
+	border-radius: 65rem;
+	text-align: center;
+	display: inline-block;
+	margin: 3px;
+
+	&:hover {
+		@include transitions;
+		background: $blue;
+		border: 2px solid $blue;
+		color: #fff;
+	}
+}
+
+.adjusted {
+	width: 11.5%;
+}
+
+.row2 {
+	padding-top: 15px;
+}
