@@ -54,9 +54,28 @@ PARTY BORDERS
 .headshot {
 	width: 50px;
 	height: 80px;
-	&:hover {
-		
+	opacity: 0.5;
+
+	&:hover, &:active {
+		@include transitions;
+		opacity: 1;
 	}
+}
+
+.chart {
+	width: 80%;
+	// display: inline-block;
+	float: right;
+	border: 1px solid red;
+	width: 75%;
+	text-align: center;
+	padding: 10px;
+}
+
+.selection {
+	// width: 20%;
+	// display: inline-block;
+	// float: left;
 }
 
 

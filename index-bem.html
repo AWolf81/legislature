@@ -27,37 +27,36 @@
 
 		<!-- Three options readers can click -->
 		<section class="selection">
-		<p class="bold">Age</p>
-			<p class="rect">Under 35</p>
-			<p class="rect">36-64</p>
-			<p class="rect">65+</p>
+			<div class="gender">
+				<p class="catergory">Gender</p>
+				<div class="options">
+					<p class="rect G1">Male</p>
+					<p class="rect G2">Female</p>
+				</div><!-- /.options -->
+			</div><!-- /.gender -->
 
-		<p class="bold">Ethnicity</p>
-			<p class="rect">White</p>
-			<p class="rect">Black</p>
-			<p class="rect">Aboriginal</p>
-			<p class="rect">Metis</p>
-			<p class="rect">Asian</p>
+			<div class="age">
+				<p class="catergory">Age</p>
+				<div class="options">
+					<p class="rect A1">Under 35</p>
+					<p class="rect A2">36-64</p>
+					<p class="rect A3">65+</p>
+				</div><!-- /.options -->
+			</div><!-- /.age -->
 
-		<p class="bold">Gender</p>
-			<p class="rect">Male</p>
-			<p class="rect">Female</p>
+			<div class="ethnicity">
+				<p class="catergory">Ethnicity</p>
+				<div class="options">
+					<p class="rect E1">White</p>
+					<p class="rect E2">Black</p>
+					<p class="rect E3">Aboriginal</p>
+					<p class="rect E4">Metis</p>
+					<p class="rect E5">Asian</p>
+				</div><!-- /.options -->
+			</div><!-- /.ethnicity -->
 		</section>
 
-			<img src="assets/img/seatingchart.png" alt="" class="seats">
-
-		<section class="byline">
-			<p>Created by Graeme Bruce and Andrew Nguyen</p>
-		</section><!-- /.byline -->
-
-		<section class="others">
-			<h2>There are <span class="number">XX</span> MLAs that fit in your demographic</h2>
-			<p class="special">(Does not include the single vacant seat for the Pas.)</p>
-		</section>
-
-
-		<!-- This will be for the map -->
-		<figure class="mapContainer">
+		<figure class="chart">
 			<img src="assets/img/headshots/allan.jpg" alt="" class="headshot NDP">
 			<img src="assets/img/headshots/allum.jpg" alt="" class="headshot NDP">
 			<img src="assets/img/headshots/altemeyer.jpg" alt="" class="headshot NDP">
@@ -116,70 +115,26 @@
 			<img src="assets/img/headshots/wishart.jpg" alt="" class="headshot PC">
 		</figure>
 
-		<!-- The map's caption -->
-		<figcaption>
-		</figcaption>
-	</main>
+ 		<section class="others clearfix">
+			<h2>There are <span class="number">XX</span> MLAs that fit in your demographic</h2>
+			<figcaption class="special">(Does not include the single vacant seat for the Pas.)</figcaption>
+		</section>
+</main>
 
-	<!-- This will be for the sidebar -->
-	<aside>
-		<div class="compare clearfix">
-			<h2>How does Congress compete to the country overall</h2>
-			<p class="shrunk">If we shrunk down the whole US to the size of Congress - 535 voting seats - we'd see a lot more women, for starters.</p>
+<footer>
+	<img src="assets/img/logo.png" alt="" class="logo">
+	<p class="new">Thanks for checking out the Brandon Sun's new legislature app. Let us know what you think.</p>
+	<p class="credits">Created by Graeme Bruce and Andrew Nguyen</p>
+	<a href=""><p class="feedback">Give us feedback</p></a>
+	<div class="crossContainer">
+		<svg class="cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
+			<path d="M52.828,50l28.586-28.586c0.781-0.781,0.781-2.047,0-2.828c-0.78-0.781-2.048-0.781-2.828,0L50,47.172L21.414,18.586  c-0.78-0.781-2.048-0.781-2.828,0c-0.781,0.781-0.781,2.047,0,2.828L47.172,50L18.586,78.586c-0.781,0.781-0.781,2.047,0,2.828  C18.976,81.805,19.488,82,20,82s1.024-0.195,1.414-0.586L50,52.828l28.586,28.586C78.976,81.805,79.488,82,80,82  s1.024-0.195,1.414-0.586c0.781-0.781,0.781-2.047,0-2.828L52.828,50z"/>
+		</div><!-- /.cross -->
+	</footer>
 
-			<div class="gender sidebar">
-				<h3>gender</h3>
-				<p class="optionSidebar selected">Female</p>
-				<p class="optionSidebar">Male</p>
-			</div><!-- /.gender -->
-
-			<div class="ethnicity sidebar">
-				<h3>ethnicity &#38; race</h3>
-				<p class="optionSidebar selected">Hispanic</p>
-				<p class="optionSidebar">Black</p>
-				<p class="optionSidebar">Asian</p>
-				<p class="optionSidebar">White</p>
-				<p class="optionSidebar sidebarAdjusted">Native American</p>
-			</div><!-- /.ethnicity -->
-
-			<div class="orientation sidebar">
-				<h3>orientation</h3>
-				<p class="optionSidebar selected">LGBTQ</p>
-				<p class="optionSidebar sidebarAdjusted">Heterosexual</p>
-			</div><!-- /.orientation -->
-
-			<div class="age sidebar">
-				<h3>age</h3>
-				<p class="optionSidebar selected">under 45</p>
-				<p class="optionSidebar">45-64</p>
-				<p class="optionSidebar">over 64</p>
-			</div><!-- /.age -->
-
-			<div class="education sidebar">
-				<h3>education</h3>
-				<p class="optionSidebar selected">no college</p>
-				<p class="optionSidebar sidebarAdjusted">some college</p>
-				<p class="optionSidebar sidebarAdjusted">associate's degree</p>
-				<p class="optionSidebar sidebarAdjusted">bachleor's degree</p>
-				<p class="optionSidebar sidebarAdjusted">higher degree</p>
-			</div><!-- /.education -->
-		</div><!-- /.compare -->
-	</aside>
-
-	<footer>
-		<img src="assets/img/logo.png" alt="" class="logo">
-		<p class="new">Thanks for checking out the Brandon Sun's new legislature app. Let us know what you think.</p>
-		<p class="credits"><strong>Team:</strong> Graeme Bruce, Colin Corneau, Andrew Nguyen, Tyler Stephens </p>
-		<a href=""><p class="feedback">Give us feedback</p></a>
-		<div class="crossContainer">
-			<svg class="cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
-				<path d="M52.828,50l28.586-28.586c0.781-0.781,0.781-2.047,0-2.828c-0.78-0.781-2.048-0.781-2.828,0L50,47.172L21.414,18.586  c-0.78-0.781-2.048-0.781-2.828,0c-0.781,0.781-0.781,2.047,0,2.828L47.172,50L18.586,78.586c-0.781,0.781-0.781,2.047,0,2.828  C18.976,81.805,19.488,82,20,82s1.024-0.195,1.414-0.586L50,52.828l28.586,28.586C78.976,81.805,79.488,82,80,82  s1.024-0.195,1.414-0.586c0.781-0.781,0.781-2.047,0-2.828L52.828,50z"/>
-			</div><!-- /.cross -->
-		</footer>
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="assets/js/scripts.js"></script>
-	</body>
-	</html>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>
 
 

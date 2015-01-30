@@ -6,12 +6,10 @@ SELECTION
 	margin: 0 auto;
 }
 
-
-.bold {
+.catergory {
 	@include serifBold;
 	font-size: 2.4rem;
-	display: inline;
-	padding: 5px;
+	padding-top: 10px;
 }
 
 .selectionWrapper {
@@ -62,8 +60,16 @@ FIXING LAYOUT
 	text-align: center;
 
 	&:hover {
+		cursor: pointer;
+	}
+
+	&:active {
 		transition: 1s;
 		background: $yellow;
 		cursor: pointer;
 	}
+}
+
+.clicked {
+	background: $yellow;
 }

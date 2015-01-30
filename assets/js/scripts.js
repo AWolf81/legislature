@@ -1,7 +1,19 @@
 $(function() {
 
-	// Trying to figure out how to Dynamo this
+
+// If your age is between 36-64, show me all MLA's in that age range
+
 	$(".credits").hide();
+
+	$(".rect").click(function(){
+		$(this).toggleClass("clicked");
+	});
+
+	$( "#clickme" ).click(function() {
+	  $( "#book" ).fadeTo( "slow" , 0.5, function() {
+	    // Animation complete.
+	  });
+	});
 
 	// This hides the footer on click
 	$(".crossContainer").click(function(){
@@ -10,33 +22,13 @@ $(function() {
 		});
 	});
 
-	// For a pie chart
-	var countries = document.getElementById("myChart").getContext("2d");
-	new Chart(countries).Pie(pieData, pieOptions);
-
-	var pieData = [
-		{
-			value: 20,
-			color:"#878BB6"
-		},
-		{
-			value : 40,
-			color : "#4ACAB4"
-		},
-		{
-			value : 10,
-			color : "#FF8153"
-		},
-		{
-			value : 30,
-			color : "#FFEA88"
-		}
-	];
-
-
-	var pieOptions = {
-		segmentShowStroke : false,
-		animateScale : true
+	var eichler = {
+		name: "EICHLER, Ralph",
+		age: 64,
+		constuency: "Lakeside",
+		party: "PC",
+		gender: "Male",
+		ethnicity: "White"
 	}
 });
 
