@@ -47,3 +47,23 @@ SELECTION
 .row2 {
 	padding-top: 15px;
 }
+
+/*----------------------------------
+FIXING LAYOUT
+----------------------------------*/
+.rect {
+	@include sansNormal;
+	background: $s;
+	font-size: 1.6rem;
+	color: $b;
+	border: 2px solid $g;
+	padding: 8px;
+	width: 8%;
+	text-align: center;
+
+	&:hover {
+		transition: 1s;
+		background: $yellow;
+		cursor: pointer;
+	}
+}

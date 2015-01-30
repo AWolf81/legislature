@@ -11,7 +11,7 @@ OTHERS
 }
 
 .number {
-	color: $blue;
+	color: $yellow;
 	font-size: 6.4rem;
 	padding: 5px;
 }
@@ -47,3 +47,28 @@ OTHERS
 canvas {
 	border: 1px solid red;
 }
+
+/*----------------------------------
+PARTY BORDERS
+----------------------------------*/
+.headshot {
+	width: 50px;
+	height: 80px;
+	&:hover {
+		
+	}
+}
+
+
+// .NDP {
+// 	border: 3px solid $NDP;
+// }
+
+// .Liberal {
+// 	border: 3px solid $Liberal;
+// }
+
+// .PC {
+// 	border: 3px solid $PC;
+// }
+
