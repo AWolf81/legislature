@@ -9,9 +9,10 @@ h1 {
 	@include serifBold;
 	font-size: 6rem;
 	line-height: 60px;
-	width: 45%;
-	padding-left: 30px;
+	width: 50%;
+	padding-left: 50px;
 	margin-right: 50px;
+	margin-bottom: 10px;
 	float: left;
 }
 
@@ -33,10 +34,8 @@ p {
 }
 
 a {
-	color: darken($yellow, 10%);
+	color: $b;
 	text-decoration: none;
 	&:hover {
-		@include transitions;
-		color: darken($yellow, 5%);
 	}
 }
