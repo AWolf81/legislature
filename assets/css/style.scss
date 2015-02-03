@@ -27,16 +27,17 @@ CLEARFIX
 SASS PARTIALS
 ----------------------------------*/
 
-@import "_colors";
-@import "_grid";
-@import "_mixins";
-@import "_normalize";
+@import "partials/_colors";
+@import "partials/_grid";
+@import "partials/_mixins";
+@import "partials/_normalize";
 
 // Sections
-@import "_base";
-@import "_intro";
-@import "_selection";
-@import "_others";
-@import "_compare";
-@import "_footer";
-@import "_tooltip";
+@import "partials/_base";
+@import "partials/_intro";
+@import "partials/_sidebar";
+@import "partials/_chart";
+@import "partials/_tooltip";
+@import "partials/_others";
+@import "partials/_footer";
+

@@ -1,0 +1,52 @@
+/*----------------------------------
+SIDEBAR
+----------------------------------*/
+.interactive {
+	padding-bottom: 40px;
+}
+
+.selection {
+	width: 20%;
+	float: left;
+	margin: 0 auto;
+}
+
+.category {
+	@include serifBold;
+	font-size: 2.4rem;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.options {
+	width: 100%;
+}
+
+.rect {
+	@include sansNormal;
+	background: $s;
+	font-size: 1.6rem;
+	color: $b;
+	border: 2px solid $g;
+	padding: 8px;
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:active {
+		transition: 1s;
+		background: $yellow;
+		cursor: pointer;
+	}
+}
+
+// JS adds this class when option is clicked
+.clicked {
+	background: $yellow;
+}
+
+

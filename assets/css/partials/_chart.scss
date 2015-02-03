@@ -1,0 +1,48 @@
+/*----------------------------------
+CHART
+----------------------------------*/
+
+.chart {
+	width: 80%;
+	float: right;
+	text-align: center;
+	padding: 10px;
+	position: relative;
+	top: 30px;
+	left: -40px;
+	padding-bottom: 40px;
+}
+
+// Tooltips are located in their own .scss file
+
+/*----------------------------------
+HEADSHOTS
+----------------------------------*/
+.headshot {
+	width: 50px;
+	height: 80px;
+	opacity: 0.5;
+
+	&:hover, &:active {
+		@include transitions;
+		opacity: 1;
+		cursor: pointer;
+	}
+}
+
+/*----------------------------------
+ADDED CLASSES
+----------------------------------*/
+
+.Male, .Female,
+.Low, .Middle, .High,
+.White, .Black, .Aboriginal, .Metis, .Asian  {
+	@include transitions;
+	opacity: 0.5;
+}
+
+// Toggle class for when MLAs selected
+.disabled {
+	@include transitions;
+	opacity: 1;
+}
