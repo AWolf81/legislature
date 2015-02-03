@@ -6,8 +6,13 @@
 	<meta name="description" content="Brandon Sun's new leglislature app.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	
 	<link rel="icon" type="image/png" href="assets/img/tiny.ico" />
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-ipad-retina.png">
+
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300|Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -16,135 +21,120 @@
 	<main>
 		<!-- Introduction to the legislature app -->
 		<section class="intro clearfix">
-			<h1>Are you reflected in the new Manitoba legislature?</h1>
-			<p class="teaser">Despite the record number of women and the first black senator elected in the south since Reconstruction, the new US Congress is still largely male and largely white. A person's gender, race, sexual orientation, or age doesn't necessarily mean they represent the views of a whole demographic, but lack of diversity could result in certain concerns not being heard – or not heard loudly enough. <a href=""><strong>Click the categories below to find yourself in the new Congress.</strong></a> This graphic will be updated as more seats are filled.</p>
+			<h1>How well are you represented in the Manitoba legislature?</h1>
+			<p class="teaser">With Manitobans heading to the polls in 2016, now is your chance to discover how many members of the legislature actually represent you. With a highlighted racial divide in the province, diversity among representatives is more important now than ever. <a href="#selection"><strong>Select the categories below to find yourself in the new Manitoba legislature.</strong></a></p>
 		</section>
 
-		<!-- Five options readers can click -->
+		<!-- Three options readers can click -->
 		<section class="selection">
-				<div class="row1">
-					<p class="bold">If you are</p>
-					<div class="selectionWrapper">
-						<p class="option">Female</p>
-						<p class="option">Male</p>
-					</div><!-- /.selectionWrapper -->
-
-					<p class="bold">and</p>
-					<div class="selectionWrapper">
-						<p class="option">Hispanic</p>
-						<p class="option">Black</p>
-						<p class="option">Asian</p>
-						<p class="option">White</p>
-						<p class="option adjusted">Native American</p>
-					</div><!-- /.selectionWrapper -->
-
-					<p class="bold">and</p>
-					<div class="selectionWrapper">
-						<p class="option">LGBTQ</p>
-						<p class="option adjusted">Heterosexual</p>
-					</div><!-- /.selectionWrapper -->
-				</div><!-- /.row1 -->
-
-				<div class="row2">
-					<p class="bold">and</p>
-					<div class="selectionWrapper">
-						<p class="option">under 45</p>
-						<p class="option">45-64</p>
-						<p class="option">over 64</p>
-					</div><!-- /.selectionWrapper -->
-
-					<p class="bold">and have</p>
-					<div class="selectionWrapper">
-						<p class="option">no college</p>
-						<p class="option adjusted">some college</p>
-						<p class="option adjusted">associate's degree</p>
-						<p class="option adjusted">bachleor's degree</p>
-						<p class="option adjusted">higher degree</p>
-					</div><!-- /.selectionWrapper -->
-				</div><!-- /.row2 -->
-		</section>
-
-		<section class="others">
-			<h2>There are <span class="number">534</span> people in congress like you</h2>
-			<div class="socialmedia">
-				<i class="fa fa-facebook fa-2x"></i>
-				<i class="fa fa-twitter fa-2x"></i>
-			</div><!-- /.socialmedia -->
-			<p class="special">(Does not include one open seat, up for special election)</p>
-		</section>
-
-		<!-- This will be for the map -->
-		<figure class="mapContainer">
-			<img src="http://placehold.it/1000x600" alt="" class="map">
-		</figure>
-
-		<!-- The map's caption -->
-		<figcaption>
-		</figcaption>
-
-		<!-- This will be for the charts -->
-		<canvas id="myChart" width="400" height="400">
-		</canvas>
-	</main>
-
-	<!-- This will be for the sidebar -->
-	<aside>
-		<div class="compare clearfix">
-			<h2>How does Congress compete to the country overall</h2>
-			<p class="shrunk">If we shrunk down the whole US to the size of Congress - 535 voting seats - we'd see a lot more women, for starters.</p>
-
-			<div class="gender sidebar">
-				<h3>gender</h3>
-				<p class="optionSidebar selected">Female</p>
-				<p class="optionSidebar">Male</p>
+			<div class="gender">
+				<p class="catergory">Gender</p>
+				<div class="options">
+					<p class="rect G1">Male</p>
+					<p class="rect G2">Female</p>
+				</div><!-- /.options -->
 			</div><!-- /.gender -->
 
-			<div class="ethnicity sidebar">
-				<h3>ethnicity &#38; race</h3>
-				<p class="optionSidebar selected">Hispanic</p>
-				<p class="optionSidebar">Black</p>
-				<p class="optionSidebar">Asian</p>
-				<p class="optionSidebar">White</p>
-				<p class="optionSidebar sidebarAdjusted">Native American</p>
-			</div><!-- /.ethnicity -->
-
-			<div class="orientation sidebar">
-				<h3>orientation</h3>
-				<p class="optionSidebar selected">LGBTQ</p>
-				<p class="optionSidebar sidebarAdjusted">Heterosexual</p>
-			</div><!-- /.orientation -->
-
-			<div class="age sidebar">
-				<h3>age</h3>
-				<p class="optionSidebar selected">under 45</p>
-				<p class="optionSidebar">45-64</p>
-				<p class="optionSidebar">over 64</p>
+			<div class="age">
+				<p class="catergory">Age</p>
+				<div class="options">
+					<p class="rect A1">Under 35</p>
+					<p class="rect A2">36-64</p>
+					<p class="rect A3">65+</p>
+				</div><!-- /.options -->
 			</div><!-- /.age -->
 
-			<div class="education sidebar">
-				<h3>education</h3>
-				<p class="optionSidebar selected">no college</p>
-				<p class="optionSidebar sidebarAdjusted">some college</p>
-				<p class="optionSidebar sidebarAdjusted">associate's degree</p>
-				<p class="optionSidebar sidebarAdjusted">bachleor's degree</p>
-				<p class="optionSidebar sidebarAdjusted">higher degree</p>
-			</div><!-- /.education -->
-		</div><!-- /.compare -->
-	</aside>
+			<div class="ethnicity">
+				<p class="catergory">Ethnicity</p>
+				<div class="options">
+					<p class="rect E1">White</p>
+					<p class="rect E2">Black</p>
+					<p class="rect E3">Aboriginal</p>
+					<p class="rect E4">Metis</p>
+					<p class="rect E5">Asian</p>
+				</div><!-- /.options -->
+			</div><!-- /.ethnicity -->
+		</section>
 
-	<footer>
-		<img src="assets/img/logo.png" alt="" class="logo">
-		<p class="new">Thanks for checking out the Brandon Sun's new legislature app. Let us know what you think.</p>
-		<p class="credits"><strong>Team:</strong> Graeme Bruce, Colin Corneau, Andrew Nguyen, Tyler Stephens </p>
-		<a href=""><p class="feedback">Give us feedback</p></a>
-		<div class="crossContainer">
-			<svg class="cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
-				<path d="M52.828,50l28.586-28.586c0.781-0.781,0.781-2.047,0-2.828c-0.78-0.781-2.048-0.781-2.828,0L50,47.172L21.414,18.586  c-0.78-0.781-2.048-0.781-2.828,0c-0.781,0.781-0.781,2.047,0,2.828L47.172,50L18.586,78.586c-0.781,0.781-0.781,2.047,0,2.828  C18.976,81.805,19.488,82,20,82s1.024-0.195,1.414-0.586L50,52.828l28.586,28.586C78.976,81.805,79.488,82,80,82  s1.024-0.195,1.414-0.586c0.781-0.781,0.781-2.047,0-2.828L52.828,50z"/>
-			</div><!-- /.cross -->
-		</footer>
+		<figure class="chart">
+			<img src="assets/img/headshots/allan.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/allum.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/altemeyer.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/ashton.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/bjornson.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/blady.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/braun.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/briese.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/caldwell.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/chief.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/chomiak.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/crothers.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/cullen.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/dewar.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/driedger.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/eichler.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/ewasko.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/friesen.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/gaudreau.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/gerrard.jpg" alt="" class="headshot Liberal">
+			<img src="assets/img/headshots/goertzen.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/graydon.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/helwer.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/howard.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/irvinross.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/jha.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/kostyshyn.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/lemieux.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/mackintosh.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/maloway.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/marcelino.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/marcelino2.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/martin.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/melnick.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/mitchelson.jpg" alt="" class="headshot">
+			<img src="assets/img/headshots/nevakshonoff.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/oswald.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/pallister.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/pedersen.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/pettersen.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/piwniuk.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/reid.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/robinson.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/rondeau.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/rowat.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/saran.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/schuler.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/selby.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/selinger.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/smook.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/stefanson.jpg" alt="" class="headshot PC">
+			<img src="assets/img/headshots/struthers.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/swan.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/wiebe.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/wight.jpg" alt="" class="headshot NDP">
+			<img src="assets/img/headshots/wishart.jpg" alt="" class="headshot PC">
+		</figure>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="assets/js/scripts.js"></script>
-		<script src="assets/js/chart.js"></script>
-	</body>
-	</html>
+ 		<section class="others clearfix">
+			<h2>There are <span class="number">XX</span> MLAs that fit in your demographic</h2>
+			<figcaption class="special">(Does not include the single vacant seat for the Pas.)</figcaption>
+		</section>
+</main>
+
+<footer>
+	<img src="assets/img/logo.png" alt="" class="logo">
+	<p class="new">Thanks for checking out the Brandon Sun's new legislature app. Let us know what you think.</p>
+	<p class="credits">Created by Graeme Bruce and Andrew Nguyen</p>
+	<a href=""><p class="feedback">Give us feedback</p></a>
+	<div class="crossContainer">
+		<svg class="cross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100px" height="100px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
+			<path d="M52.828,50l28.586-28.586c0.781-0.781,0.781-2.047,0-2.828c-0.78-0.781-2.048-0.781-2.828,0L50,47.172L21.414,18.586  c-0.78-0.781-2.048-0.781-2.828,0c-0.781,0.781-0.781,2.047,0,2.828L47.172,50L18.586,78.586c-0.781,0.781-0.781,2.047,0,2.828  C18.976,81.805,19.488,82,20,82s1.024-0.195,1.414-0.586L50,52.828l28.586,28.586C78.976,81.805,79.488,82,80,82  s1.024-0.195,1.414-0.586c0.781-0.781,0.781-2.047,0-2.828L52.828,50z"/>
+		</div><!-- /.cross -->
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>
+
+

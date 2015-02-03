@@ -2,14 +2,22 @@
 SELECTION
 ----------------------------------*/
 .selection {
-	width: 90%;
+	// width: 90%;
+	width: 20%;
+	float: left;
 	margin: 0 auto;
+	// border: 1px solid red;
+}
+
+.options {
+	width: 100%;
 }
 
 .catergory {
 	@include serifBold;
 	font-size: 2.4rem;
 	padding-top: 10px;
+	text-align: center;
 }
 
 .selectionWrapper {
@@ -56,7 +64,8 @@ FIXING LAYOUT
 	color: $b;
 	border: 2px solid $g;
 	padding: 8px;
-	width: 8%;
+	width: 40%;
+	margin: 0 auto;
 	text-align: center;
 
 	&:hover {

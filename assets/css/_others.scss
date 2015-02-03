@@ -3,6 +3,10 @@ OTHERS
 ----------------------------------*/
 .others {
 	padding-top: 20px;
+    position: relative;
+    left: -40px;
+    width: 80%;
+    float: left;
 }
 
 .mapContainer {
@@ -44,12 +48,8 @@ OTHERS
 	padding-bottom: 20px;
 }
 
-canvas {
-	border: 1px solid red;
-}
-
 /*----------------------------------
-PARTY BORDERS
+HEADSHOTS
 ----------------------------------*/
 .headshot {
 	width: 50px;
@@ -58,36 +58,43 @@ PARTY BORDERS
 
 	&:hover, &:active {
 		@include transitions;
+		@include tooltip;
 		opacity: 1;
+		cursor: pointer;
 	}
+}
+
+/*----------------------------------
+ADDITIONAL CLASSES
+----------------------------------*/
+
+.Male, .Female,
+.Low, .Middle, .High,
+.White, .Black, .Aboriginal, .Metis, .Asian  {
+	opacity: 0.5;
+	@include transitions;
+}
+
+.disabled {
+	opacity: 1;
+	@include transitions;
+}
+
+.graphic {
+	position: relative;
 }
 
 .chart {
 	width: 80%;
-	// display: inline-block;
 	float: right;
-	border: 1px solid red;
-	width: 75%;
 	text-align: center;
 	padding: 10px;
+	position: relative;
+	top: 30px;
+	left: -40px;
+	padding-bottom: 40px;
 }
 
-.selection {
-	// width: 20%;
-	// display: inline-block;
-	// float: left;
+.interactive {
+	padding-bottom: 40px;
 }
-
-
-// .NDP {
-// 	border: 3px solid $NDP;
-// }
-
-// .Liberal {
-// 	border: 3px solid $Liberal;
-// }
-
-// .PC {
-// 	border: 3px solid $PC;
-// }
-
