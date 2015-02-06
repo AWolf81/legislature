@@ -22,6 +22,10 @@ SIDEBAR
 	width: 100%;
 }
 
+span {
+	color: $yellow;
+}
+
 .rect {
 	@include sansNormal;
 	background: $s;

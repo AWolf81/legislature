@@ -3,7 +3,7 @@ TOOLTIP
 ----------------------------------*/
 
 .tooltip {
-	// display: none;
+	display: none;
 	position: relative;
 	left: -12px;
 	top: -5px;
@@ -23,9 +23,13 @@ TOOLTIP
 	}
 }
 
-.name {
+.tooltipName, {
 	font-family: 'Roboto Slab',serif;
 	font-weight: 700;
+}
+
+.tooltipEthnicity, .tooltipAge {
+	display: inline;
 }
 
 .arrow-down {
