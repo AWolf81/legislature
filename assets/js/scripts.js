@@ -559,7 +559,11 @@ $(function() {
 	};
 
 	$('#Male, #Female').click(function () {
+<<<<<<< HEAD
 	    // console.log(this);
+=======
+	    //console.log(this.id);
+>>>>>>> ebd16e2556b9e3d69534d86f8c77859f2d6e31c0
 	    removeFilter(gender, this.id =='Male'? 'Female': 'Male'); // remove not active filter
 	    setFilter(gender, this.id);
 	});
@@ -633,6 +637,11 @@ $(function() {
 	    });
 
 	    $tooltip.stop(true, true).delay(2000).fadeOut('slow'); // auto-close after 2 seconds
+	});
+
+	// If window resizes, hide tooltip
+	$( window ).resize(function() {
+	 	$(".tooltip").fadeOut("slow")
 	});
 
 	// If window resizes, hide tooltip
