@@ -13,8 +13,8 @@ $(function() {
 	var metis = null;
 	var asian = null;
 
-	var $total = $('#total');
-	var $MLA_List = $('#MLA_List');
+	// var $total = $('#total');
+	// var $MLA_List = $('#MLA_List');
 
 	// MLAs
 	var MLAs = [
@@ -468,138 +468,179 @@ $(function() {
 	}
 	];
 
-	var filteredMLAs = MLAs.slice(0); // copy MLAs
-	var total = filteredMLAs.length;
+	// NEW
+	// var filteredMLAs = MLAs.slice(0); // copy MLAs
+	// var total = filteredMLAs.length;
 
-	var refreshList = function () {
-	    var list = filteredMLAs;
-	    setTotal(list.length);
+	// var refreshList = function () {
+	//     var list = filteredMLAs;
+	//     setTotal(list.length);
 
-	    $MLA_List.empty();
-	    $.each(list, function (index, value) {
-	        $MLA_List.append($('<li/>').text(list[index].Name));
-	    });
-	};
-	var setTotal = function (value) {
-	    $total.text(value);
-	};
+	//     $MLA_List.empty();
+	//     $.each(list, function (index, value) {
+	//         $MLA_List.append($('<li/>').text(list[index].Name));
+	//     });
+	// };
+	// var setTotal = function (value) {
+	//     $total.text(value);
+	// };
 
-	// filter methods
-	var gender = function (array, gender) {
-	    //console.log('gender filter called!', gender);
-	    return _.where(array, {
-	        "Gender": gender
-	    });
-	};
+	// // filter methods
+	// var gender = function (array, gender) {
+	//     //console.log('gender filter called!', gender);
+	//     return _.where(array, {
+	//         "Gender": gender
+	//     });
+	// };
 
-	var ethnicity = function (array, ethnic) {
-	    //console.log('ethnic filter called!', array, ethnic);
-	    return _.where(array, {
-	        "Ethnicity": ethnic
-	    });
-	};
+	// var ethnicity = function (array, ethnic) {
+	//     //console.log('ethnic filter called!', array, ethnic);
+	//     return _.where(array, {
+	//         "Ethnicity": ethnic
+	//     });
+	// };
 
-	var age = function(array, ageRange) {
-	    //under 35, 36-64, 65+
-	    return _.filter(array, function(MLA) {
-	        //console.log(MLA.Age);
-	        switch(ageRange) {
-	            case 35:
-	                return ( MLA.Age <= 35 );
-	            case 36:
-	                return ( MLA.Age >= 35 && MLA.Age <= 64);
-	            case 65:
-	                return ( MLA.Age >= 65 );
-	        };
-	        return false;
-	    });
-	};
+	// var age = function(array, ageRange) {
+	//     //under 35, 36-64, 65+
+	//     return _.filter(array, function(MLA) {
+	//         //console.log(MLA.Age);
+	//         switch(ageRange) {
+	//             case 35:
+	//                 return ( MLA.Age <= 35 );
+	//             case 36:
+	//                 return ( MLA.Age >= 35 && MLA.Age <= 64);
+	//             case 65:
+	//                 return ( MLA.Age >= 65 );
+	//         };
+	//         return false;
+	//     });
+	// };
 
-	var activeFilters = [];
-	var setFilter = function (method, param) {
-	    var newFilter = {
-	        method: method,
-	        param: param
-	    };
+	// var activeFilters = [];
+	// var setFilter = function (method, param) {
+	//     var newFilter = {
+	//         method: method,
+	//         param: param
+	//     };
 
-	    var matchedFilter = _.find(activeFilters, newFilter),
-	        index = activeFilters.indexOf(matchedFilter);
-	    
-	    if ( index == -1 ) {
-	        activeFilters.push(newFilter);
-	    } 
-	    
-	    applyFilter();
-	};
+	//     var matchedFilter = _.find(activeFilters, newFilter),
+	//         index = activeFilters.indexOf(matchedFilter);
 
-	var removeFilter = function(method, param) {
-	    var filter = {
-	        method: method,
-	        param: param
-	    };
-	    
-	    var index = activeFilters.indexOf(_.find(activeFilters, filter));
-	    
-	    if (index > -1) {
-	        activeFilters.splice(index, 1);
+	//     if ( index == -1 ) {
+	//         activeFilters.push(newFilter);
+	//     }
+	//     applyFilter();
+	// };
+
+	// var removeFilter = function(method, param) {
+	//     var filter = {
+	//         method: method,
+	//         param: param
+	//     };
+	//     var index = activeFilters.indexOf(_.find(activeFilters, filter));
+	//     if (index > -1) {
+	//         activeFilters.splice(index, 1);
+	//     }
+	//     applyFilter(); // re-apply filter to update list
+	// };
+
+	// var applyFilter = function () {
+	//     var filtered = MLAs.slice(0);
+	//     $.each(activeFilters, function () {
+	//         filtered = this.method(filtered, this.param);
+	//     });
+	//     filteredMLAs = filtered ? filtered: [];
+	//     refreshList();
+	// };
+
+	// $('#Male, #Female').click(function () {
+	//     //console.log(this.id);
+	//     removeFilter(gender, this.id=='Male'? 'Female': 'Male'); // remove not active filter
+	//     setFilter(gender, this.id);
+	// });
+
+	// $('#White, #Black, #Aboriginal, #Metis, #Asian').click(function () {
+	//     //console.log(this.checked);
+	//     if ( this.checked )
+	//         setFilter(ethnicity, this.id); //'White');
+	//     else
+	//         removeFilter(ethnicity, this.id); //'White');
+	// });
+
+	// $('.Age').click(function() {
+	//     removeFilter(age, 35); // improvement of remove filter required, e.g. remove all age filters
+	//     removeFilter(age, 36);
+	//     removeFilter(age, 65);
+	//     setFilter(age, parseInt(this.value));
+	// });
+
+
+	// OLD
+	// Highlights the selected option in yellow
+	$(".rect").click(function(){
+		$(this).toggleClass("clicked");
+	});
+
+	// Option #1: Gender
+	$( ".G1" ).click(function() {
+		$(".G2").toggleClass("disabled");
+		$(".headshot").not(".Female").toggleClass("opacity");
+
+		var resultMale = total - female;
+		$(".number").html(resultMale);
+	});
+
+	$( ".G2" ).click(function() {
+		$(".G1").toggleClass("disabled");
+		$(".headshot").not(".Male").toggleClass("opacity");
+
+		var resultFemale = total - male;
+		$(".number").html(resultFemale);
+	});
+
+	// Option #2: Age
+	$( ".A1" ).click(function() {
+		$(".A2").toggleClass("disabled");
+		$(".A3").toggleClass("disabled");
+		$(".Low").toggleClass("show");
+
+		var resultLow = resultMale || resultFemale - (middle + high);
+		$(".number").html("?");
+	});
+
+	$( ".A2" ).click(function() {
+		$(".A1").toggleClass("disabled");
+		$(".A3").toggleClass("disabled");
+		$(".Medium").toggleClass("show");
+
+		var resultMiddle = resultMale || resultFemale - (low + high);
+		$(".number").html("?");
+	});
+
+	$( ".A3" ).click(function() {
+		$(".A1").toggleClass("disabled");
+		$(".A2").toggleClass("disabled");
+		$(".High").toggleClass("show");
+
+		var resultHigh = resultMale || resultFemale - (low + middle);
+		$(".number").html("?");
+	});
+
+	// Option #3: Ethnicity
+	$("input[name='ethnicity']").on("change", function() {
+	    var $checkedbox = $("input[name='ethnicity']:checked");
+
+		if($checkedbox.length >= 2)
+		{
+	        var $uncheckedbox = $("input[name='ethnicity']:not(:checked)");
+			$.each($uncheckedbox, function() {
+				$(this).attr("disabled", "disabled");
+			});
+		}
+	    else
+	    {
+	        $("input[name='ethnicity']").removeAttr("disabled");
 	    }
-	    
-	    applyFilter(); // re-apply filter to update list
-	};
-
-	var applyFilter = function () {
-	    var filtered = MLAs.slice(0);
-	    $.each(activeFilters, function () {
-	        filtered = this.method(filtered, this.param);
-	    });
-	    filteredMLAs = filtered ? filtered: [];
-	    refreshList();
-	};
-
-	$('#Male, #Female').click(function () {
-	    //console.log(this.id);
-	    removeFilter(gender, this.id=='Male'? 'Female': 'Male'); // remove not active filter
-	    setFilter(gender, this.id);
-	});
-
-	$('#White, #Black, #Asian, #Metis, #Aboriginal').click(function () {
-	    //console.log(this.checked);
-	    var checkedEthnic = _.pluck($('input[name="ethnicity"]'), 'checked'); // array with true/false values
-	    var checkedCount = _.reduce(checkedEthnic, function(memo, num){ 
-	        return memo + num; 
-	    }, 0);
-	    console.log(checkedCount);
-	    
-	    if ( checkedCount <= 2 ) {
-	        if ( this.checked ) {
-	            setFilter(ethnicity, this.id); //'White');
-	        }
-	        else {
-	            removeFilter(ethnicity, this.id); //'White');
-	        }
-	    }
-	    else {
-	        console.log('Max. 2 ethnic filters can be active!');
-	        this.checked = false;
-	    }
-	});
-
-	$('.Age').click(function() {
-	    removeFilter(age, 35); // improvement of remove filter required, e.g. remove all age filters
-	    removeFilter(age, 36);
-	    removeFilter(age, 65);
-	    setFilter(age, parseInt(this.value));
-	});
-
-	$('#reset').click(function(){
-	    //console.log('reset form');
-	    activeFilters = [];
-	    $(':checkbox, :radio').attr('checked', false);
-	    applyFilter();
-	});
-
-	$(function () {
-	    refreshList();
 	});
 
 	// Shows a popup with MLA information
@@ -614,17 +655,24 @@ $(function() {
 	});
 
 	// Positioning of the tooltips
-	$('img').click(function(){
+	$(".headshot").click(function(){
 
-	    var img = $(this);
+		// Fades in the tooltip
+		$(".tooltip").fadeIn("fast");
 
-	    $('.tooltip')
-	    .show(100)
-	    .css({
-	        top: img.offset().top + img.height(),
-	        left: img.offset().left
-	    });
-	});
+		// This is the coordinates for current position of a tooltip
+		var coords = $(".tooltip").offset();
+
+		var height = $(".tooltip").height();
+		console.log(height);
+
+		var width = $(".tooltip").width();
+		console.log(width);
+
+		// How do I figure out how much top or left I need to move it?
+		alert("Top: " + coords.top + " Left: " + coords.left);
+		console.log(coords);
+});
 
 	// Bounce and show result
 	$(".rect").click(function(){

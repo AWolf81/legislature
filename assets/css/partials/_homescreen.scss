@@ -1,0 +1,54 @@
+/*----------------------------------
+HOMESCREEN
+----------------------------------*/
+
+.homescreen {
+	background: $black;
+}
+
+.install, .add {
+	@include sansLightBlack;
+	font-size: 1.2rem;
+}
+
+.install {
+	display: none;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5%;
+	padding-top: 1%;
+	margin: 0%;
+	// background: #000;
+	color: #fff;
+	// position: fixed;
+}
+
+.addContainer {
+	position: relative;
+	top: 9px;
+	left: 1px;
+}
+
+.plusContainer {
+	position: relative;
+	top: 11px;
+	left: 1px;
+}
+
+.addIcon, .plusIcon {
+	width: 30px;
+	height: 30px;
+	fill: $yellow;
+}
+
+.add {
+	display: none;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 5%;
+	padding-top: 1%;
+	margin: 0%;
+	// background: #000;
+	color: #fff;
+}
+

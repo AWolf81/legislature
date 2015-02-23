@@ -3,6 +3,22 @@ BASE STYLES
 ----------------------------------*/
 html {
   font-size: 62.5%; /* 10px browser default */
+  margin-right: 0%;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	main {
+		// margin-left: 2%;
+	}
 }
 
 h1 {
@@ -16,11 +32,311 @@ h1 {
 	float: left;
 }
 
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1360px) {
+		h1 {
+			width: 39%;
+			margin-right: 110px;
+
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1320px) {
+		h1 {
+			width: 37%;
+			font-size: 5.5rem;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1285px) {
+		h1 {
+			width: 38%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1248px) {
+		h1 {
+			width: 40%;
+			margin-right: 60px;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1205px) {
+		h1 {
+			width: 41%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1180px) {
+		h1 {
+			width: 42%;
+			margin-right: 7%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1130px) {
+		h1 {
+			width: 43%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1105px) {
+		h1 {
+			width: 45%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1055px) {
+		h1 {
+			width: 46%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 1030px) {
+		h1 {
+			width: 48%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 990px) {
+		h1 {
+			width: 50%;
+			margin-right: 0%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 948px) {
+		h1 {
+			width: 52%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 915px) {
+		h1 {
+			font-size: 4.5rem;
+			width: 46%;
+			padding-left: 6%;
+			margin-right: 10%;
+			padding-top: 2%;
+			line-height: 53px;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 868px) {
+		h1 {
+			width: 48%;
+			margin-right: 0%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 830px) {
+		h1 {
+			width: 49%;
+			margin-right: 0%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 815px) {
+		h1 {
+			width: 90%;
+			  padding-top: 5%;
+			  margin-left: 4%;
+			  padding-left: -5%;
+			  text-align: center;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 750px) {
+		h1 {
+			width: 80%;
+			margin-left: 8%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 630px) {
+		h1 {
+			width: 85%;
+			margin-left: 7%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 590px) {
+		h1 {
+			width: 72%;
+			margin-left: 12%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 530px) {
+		h1 {
+			width: 74%;
+			margin-left: 10%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 510px) {
+		h1 {
+			width: 78%;
+			margin-left: 9%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 482px) {
+		h1 {
+			width: 84%;
+			margin-left: 5%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 450px) {
+		h1 {
+			width: 94%;
+			margin-left: 0%;
+
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 415px) {
+		h1 {
+			font-size: 4.5rem;
+			line-height: 5rem;
+			width: 80%;
+			padding-top: 10%;
+			padding-left: 18%;
+			margin: 0px;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 400px) {
+		h1 {
+			font-size: 4.25rem;
+			  line-height: 5rem;
+			  width: 95%;
+			  padding-top: 10%;
+			  padding-left: 4%;
+			  margin: 0px;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 360px) {
+		h1 {
+			font-size: 4rem;
+			  line-height: 5rem;
+			  width: 88%;
+			  padding-top: 10%;
+			  padding-left: 0%;
+			  margin-left: 7%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 350px) {
+		h1 {
+			font-size: 3.75rem;
+			  line-height: 5rem;
+			  width: 88%;
+			  padding-top: 10%;
+			  padding-left: 0%;
+			  margin-left: 6%;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 330px) {
+		h1 {
+			font-size: 3.5rem;
+			line-height: 5rem;
+			width: 95%;
+			padding-left: 4%;
+			margin: 0 auto;
+		}
+	}
+
 h2 {
 	@include serifBold;
 	font-size: 3.2rem;
 	text-align: center;
-	margin-bottom: 0px;
+	margin: 0px;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1215px) {
+	h2 {
+		margin-top: 0.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 415px) {
+	h2 {
+		font-size: 3rem;
+		padding-left: 1%;
+		padding-bottom: 7%;
+		line-height: 42px;
+		width: 78%;
+		margin: 0 auto;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 415px) {
+	h2 {
+		font-size: 3rem;
+		line-height: 42px;
+		width: 96%;
+		margin: 0 auto;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 350px) {
+	h2 {
+		width: 100%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 340px) {
+	h2 {
+		font-size: 2.75rem;
+	}
 }
 
 h3 {
@@ -40,14 +356,6 @@ a {
 	}
 }
 
-/* Portrait tablet and small desktops */
-@media (max-width: 1360px) {
-	h1 {
-		width: 40%;
-		margin-right: 110px;
-
-	}
-}
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {

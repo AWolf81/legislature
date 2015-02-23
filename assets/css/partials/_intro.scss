@@ -1,17 +1,144 @@
 /*----------------------------------
 INTRO
 ----------------------------------*/
+.thin {
+	background: $yellow;
+	// margin: 0px;
+	padding-bottom: 1%;
+	width: 100%;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.thin {
+		padding-bottom: 1.25%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.thin {
+		padding-bottom: 1.5%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 320px) {
+	.thin {
+		padding-bottom: 1.75%;
+	}
+}
+
 .intro {
 	padding-bottom: 30px;
-	padding-left: 20px;
+	// padding-left: 20px;
 }
 
 .teaser {
 	@include serifNormal;
 	font-size: 1.6rem;
 	line-height: 24px;
-	width: 41%;
+	width: 34%;
 	float: left;
 	position: relative;
 	top: 48px;
+	margin-left: 8%;
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1395px) {
+	.teaser {
+		width: 35%;
+		margin-left: 6%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1355px) {
+	.teaser {
+		width: 43%;
+		margin-left: 4%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1333px) {
+	.teaser {
+		width: 43%;
+		margin-left: 6%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1180px) {
+	.teaser {
+		width: 38%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1040px) {
+	.teaser {
+		width: 36%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 920px) {
+	.teaser {
+		width: 36%;
+		margin-left: 8%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 916px) {
+	.teaser {
+		width: 36%;
+		margin-left: 4%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 868px) {
+	.teaser {
+		width: 38%;
+		margin-left: 10%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 815px) {
+	.teaser {
+		width: 90%;
+		 padding-bottom: 4%;
+		 margin-top: -2%;
+		 line-height: 31px;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 800px) {
+	.teaser {
+		width: 82%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 415px) {
+	.teaser {
+		width: 92%;
+		margin: 0 auto;
+		padding-left: 14%;
+		padding-right: 6%;
+		padding-top: 3%;
+		line-height: 1px;
+		line-height: 31px;
+	}
+}
+
+

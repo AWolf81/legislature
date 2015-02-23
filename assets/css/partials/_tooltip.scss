@@ -4,9 +4,28 @@ TOOLTIP
 
 .tooltip {
 	display: none;
-	position: relative;
-	left: -12px;
+	position: absolute;
+	width: 100%;
+	opacity: 1;
+	z-index: 10;
+	left: 45px;
 	top: -5px;
+}
+
+// .show {
+// 	opacity: 1;
+// }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }
 
 .info {
@@ -14,12 +33,132 @@ TOOLTIP
 	background: $yellow;
 	color: $black;
 	font-size: 1.4rem;
-	padding: 10px;
-	width: 9%;
-	text-align: center;
+	padding: 12px;
+	width: 15%;
+	// text-align: center;
 
 	p {
 		margin: 0px;
+		padding-top: 2%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1400px) {
+	.info {
+		width: 16%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1300px) {
+	.info {
+		width: 17%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1250px) {
+	.info {
+		width: 17.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1200px) {
+	.info {
+		width: 18%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1150px) {
+	.info {
+		width: 18.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1100px) {
+	.info {
+		width: 19%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1060px) {
+	.info {
+		width: 20.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1000px) {
+	.info {
+		width: 21.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 950px) {
+	.info {
+		width: 22.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 900px) {
+	.info {
+		width: 23.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 825px) {
+	.info {
+		width: 24.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 860px) {
+	.info {
+		width: 25.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 825px) {
+	.info {
+		width: 26.5%;
+	}
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 800px) {
+	.info {
+		width: 27.5%;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.info {
+		width: 28.5%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 415px) {
+	.info {
+		width: 55%;
+		position: relative;
+		top: 15px;
+		left: 45px;
 	}
 }
 
@@ -28,16 +167,43 @@ TOOLTIP
 	font-weight: 700;
 }
 
-.tooltipEthnicity, .tooltipAge {
+.label {
+	color: $b;
 	display: inline;
+	padding-top: 1.5%;
 }
 
-.arrow-down {
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 20px solid $yellow;
-	position: relative;
-	left: 36px;
+.tooltipEthnicity, .tooltipAge {
+	display: block;
 }
+
+// .arrow-down {
+// 	width: 0;
+// 	height: 0;
+// 	border-left: 15px solid transparent;
+// 	border-right: 15px solid transparent;
+// 	border-top: 20px solid $yellow;
+// 	position: relative;
+// 	left: 29px;
+// }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* Landscape phones and down */
+// @media (max-width: 415px) {
+// 	.arrow-down {
+// 		position: relative;
+// 		left: 89px;
+// 		top: 10px;
+// 	}
+// }
