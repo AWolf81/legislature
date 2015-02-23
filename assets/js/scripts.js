@@ -1,6 +1,6 @@
 $(function() {
 
-	console.log('scriptjs loaded and DOM ready');
+	//console.log('scriptjs loaded and DOM ready');
 
 	// Numbers
 	var total = 56;
@@ -26,7 +26,8 @@ $(function() {
 		"Constuency": "St. Vital",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/allan.jpg"
 	},
 	{ // Missing Data
 		"Name": "James Allum",
@@ -34,7 +35,8 @@ $(function() {
 		"Constuency": "Fort Garry-Riverview",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/allum.jpg"
 	},
 	{
 		"Name": "Rob Altemeyer",
@@ -42,7 +44,8 @@ $(function() {
 		"Constuency": "Wolseley",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/altemeyer.jpg"
 	},
 	{
 		"Name": "Steve Ashton",
@@ -50,7 +53,8 @@ $(function() {
 		"Constuency": "Thompson",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/ashton.jpg"
 	},
 	{
 		"Name": "Peter Bjornson",
@@ -58,7 +62,8 @@ $(function() {
 		"Constuency": "Gimli",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/bjornson.jpg"
 	},
 	{ // Missing Data
 		"Name": "Shanon Blady",
@@ -66,7 +71,8 @@ $(function() {
 		"Constuency": "Kirkfield Park",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/blady.jpg"
 	},
 	{ // Missing Data
 		"Name": "Erna Braun",
@@ -74,7 +80,8 @@ $(function() {
 		"Constuency": "Rossmere",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/braun.jpg"
 	},
 	{
 		"Name": "Stuart Briese",
@@ -82,7 +89,8 @@ $(function() {
 		"Constuency": "Agassiz",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/briese.jpg"
 	},
 	{
 		"Name": "Drew Caldwell",
@@ -90,7 +98,8 @@ $(function() {
 		"Constuency": "Brandon East",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/caldwell.jpg"
 	},
 	{ // Missing Data
 		"Name": "Kevin Chief",
@@ -98,7 +107,8 @@ $(function() {
 		"Constuency": "Point Douglas",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/chief.jpg"
 	},
 	{
 		"Name": "Dave Chomiak",
@@ -106,7 +116,8 @@ $(function() {
 		"Constuency": "Kildonan",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/chomiak.jpg"
 	},
 	{ // Missing Data
 		"Name": "Deanne Crothers",
@@ -114,7 +125,8 @@ $(function() {
 		"Constuency": "St. James",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/crothers.jpg"
 	},
 	{
 		"Name": "Cliff Cullen",
@@ -122,7 +134,8 @@ $(function() {
 		"Constuency": "Spruce Woods",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/cullen.jpg"
 	},
 	{ // Missing Data
 		"Name": "Greg Dewar",
@@ -130,15 +143,18 @@ $(function() {
 		"Constuency": "Selkirk",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/dewar.jpg"
 	},
+
 	{
 		"Name": "Myrna Driedger",
 		"Age": 63,
 		"Constuency": "Charleswood",
 		"Party": "PC",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/driedger.jpg"
 	},
 	{
 		"Name": "Ralph Eichler",
@@ -146,7 +162,8 @@ $(function() {
 		"Constuency": "Lakeside",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/eichler.jpg"
 	},
 	{ // Missing Data
 		"Name": "Wayne Ewasko",
@@ -154,7 +171,8 @@ $(function() {
 		"Constuency": "Lac du Bonnet",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/ewasko.jpg"
 	},
 	{ // Missing Data
 		"Name": "Cameron Friesen",
@@ -162,7 +180,8 @@ $(function() {
 		"Constuency": "Morden-Winkler",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/friesen.jpg"
 	},
 	{
 		"Name": "Dave Gaudreau",
@@ -170,7 +189,8 @@ $(function() {
 		"Constuency": "St. Norbert",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/gaudreau.jpg"
 	},
 	{
 		"Name": "Jon Gerrard",
@@ -178,7 +198,8 @@ $(function() {
 		"Constuency": "River Heights",
 		"Party": "Liberal",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/gerrard.jpg"
 	},
 	{
 		"Name": "Kelvin Goertzen",
@@ -186,7 +207,8 @@ $(function() {
 		"Constuency": "Steinbach",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/goertzen.jpg"
 	},
 	{ // Missing Data
 		"Name": "Cliff Graydon",
@@ -194,7 +216,8 @@ $(function() {
 		"Constuency": "Emerson",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/graydon.jpg"
 	},
 	{
 		"Name": "Reg Helwer",
@@ -202,7 +225,8 @@ $(function() {
 		"Constuency": "Brandon West",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/helwer.jpg"
 	},
 	{
 		"Name": "Jennifer Howard",
@@ -210,7 +234,8 @@ $(function() {
 		"Constuency": "Fort Rouge",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/howard.jpg"
 	},
 	{ // Missing Data
 		"Name": "Kerri Irvin-Ross",
@@ -218,7 +243,8 @@ $(function() {
 		"Constuency": "",
 		"Party": "",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/irvinross.jpg"
 	},
 	{
 		"Name": "Bidhu Jha",
@@ -226,7 +252,8 @@ $(function() {
 		"Constuency": "",
 		"Party": "",
 		"Gender": "Male",
-		"Ethnicity": "Asian"
+		"Ethnicity": "Asian",
+		"img_src": "assets/img/headshots/jha.jpg"
 	},
 	{ // Missing Data
 		"Name": "Ron Kostyshyn",
@@ -234,7 +261,8 @@ $(function() {
 		"Constuency": "Swan River",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/kostyshyn.jpg"
 	},
 	{
 		"Name": "Ron Lemieux",
@@ -242,7 +270,8 @@ $(function() {
 		"Constuency": "Dawson Trail",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/lemieux.jpg"
 	},
 	{
 		"Name": "Gord Mackintosh",
@@ -250,7 +279,8 @@ $(function() {
 		"Constuency": "St. Johns",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/mackintosh.jpg"
 	},
 	{
 		"Name": "Jim Maloway",
@@ -258,7 +288,8 @@ $(function() {
 		"Constuency": "Elmwood",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/maloway.jpg"
 	},
 	{ // Missing Data
 		"Name": "Flor Marcelino",
@@ -266,7 +297,8 @@ $(function() {
 		"Constuency": "Logan",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/marcelino.jpg"
 	},
 	{ // Missing Data
 		"Name": "Ted Marcelino",
@@ -274,7 +306,8 @@ $(function() {
 		"Constuency": "Tyndall Park",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/marcelino2.jpg"
 	},
 	{ // Missing Data
 		"Name": "Shannon Martin",
@@ -282,7 +315,8 @@ $(function() {
 		"Constuency": "Moris",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/martin.jpg"
 	},
 	{ // Missing Data
 		"Name": "Christine Melnick",
@@ -290,7 +324,8 @@ $(function() {
 		"Constuency": "Riel",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/melnick.jpg"
 	},
 	{
 		"Name": "Bonnie Mitchelson",
@@ -298,7 +333,8 @@ $(function() {
 		"Constuency": "River East",
 		"Party": "PC",
 		"Gender": "Female",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/mitchelson.jpg"
 	},
 	{
 		"Name": "Thomas Nevashonoff",
@@ -306,7 +342,8 @@ $(function() {
 		"Constuency": "Interlake",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/nevakshonoff.jpg"
 	},
 	{
 		"Name": "Theresa Oswald",
@@ -314,7 +351,8 @@ $(function() {
 		"Constuency": "Seine River",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/oswald.jpg"
 	},
 	{ // Missing Data
 		"Name": "Brian Pallister",
@@ -322,7 +360,8 @@ $(function() {
 		"Constuency": "Fort Whyte",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/pallister.jpg"
 	},
 	{ // Missing Data
 		"Name": "Blaine Pedersen",
@@ -330,7 +369,8 @@ $(function() {
 		"Constuency": "Midland",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/pedersen.jpg"
 	},
 	{ // Missing Data
 		"Name": "Clarence Pettersen",
@@ -338,7 +378,8 @@ $(function() {
 		"Constuency": "Flin Flon",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/pettersen.jpg"
 	},
 	{
 		"Name": "Doyle Piwniuk",
@@ -346,7 +387,8 @@ $(function() {
 		"Constuency": "Arthur-Virden",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/piwniuk.jpg"
 	},
 	{ // Missing Data
 		"Name": "Daryl Reid",
@@ -354,7 +396,8 @@ $(function() {
 		"Constuency": "Transcona",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/reid.jpg"
 	},
 	{
 		"Name": "Eric Robinson",
@@ -362,7 +405,8 @@ $(function() {
 		"Constuency": "Kewatinook",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/robinson.jpg"
 	},
 	{
 		"Name": "Jim Rondeau",
@@ -370,7 +414,8 @@ $(function() {
 		"Constuency": "Assiniboia",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/rondeau.jpg"
 	},
 	{
 		"Name": "Leanne Rowat",
@@ -378,7 +423,8 @@ $(function() {
 		"Constuency": "Riding Mountain",
 		"Party": "PC",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/rowat.jpg"
 	},
 	{ // Missing Data
 		"Name": "Mohinder Saran",
@@ -386,7 +432,8 @@ $(function() {
 		"Constuency": "The Maples",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/saran.jpg"
 	},
 	{
 		"Name": "Ron Schuler",
@@ -394,7 +441,8 @@ $(function() {
 		"Constuency": "St. Paul",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/schuler.jpg"
 	},
 	{ // Missing Data
 		"Name": "Erin Selby",
@@ -402,7 +450,8 @@ $(function() {
 		"Constuency": "Southdale",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/selby.jpg"
 	},
 	{
 		"Name": "Gregory Selinger",
@@ -410,7 +459,8 @@ $(function() {
 		"Constuency": "St. Boniface",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/selinger.jpg"
 	},
 	{ // Missing Data
 		"Name": "Dennis Smook",
@@ -418,7 +468,8 @@ $(function() {
 		"Constuency": "La Verendrye",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/smook.jpg"
 	},
 	{
 		"Name": "Heather Stefanson",
@@ -426,7 +477,8 @@ $(function() {
 		"Constuency": "Tuxedo",
 		"Party": "PC",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/stefanson.jpg"
 	},
 	{
 		"Name": "Stan Struthers",
@@ -434,7 +486,8 @@ $(function() {
 		"Constuency": "Dauphin",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": ""
+		"Ethnicity": "",
+		"img_src": "assets/img/headshots/struthers.jpg"
 	},
 	{
 		"Name": "Andrew Swan",
@@ -442,7 +495,8 @@ $(function() {
 		"Constuency": "Minto",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/swan.jpg"
 	},
 	{
 		"Name": "Matt Wiebe",
@@ -450,7 +504,8 @@ $(function() {
 		"Constuency": "Concordia",
 		"Party": "NDP",
 		"Gender": "Male",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/wiebe.jpg"
 	},
 	{
 		"Name": "Melanie Wight",
@@ -458,7 +513,8 @@ $(function() {
 		"Constuency": "Burrows",
 		"Party": "NDP",
 		"Gender": "Female",
-		"Ethnicity": "White"
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/wight.jpg"
 	},
 	{
 		"Name": "Ian Wishart",
@@ -466,9 +522,9 @@ $(function() {
 		"Constuency": "Portage la Prairie",
 		"Party": "PC",
 		"Gender": "Male",
-		"Ethnicity": "White"
-	}
-	];
+		"Ethnicity": "White",
+		"img_src": "assets/img/headshots/wishart.jpg"
+	}];
 
 	var filteredMLAs = MLAs.slice(0); // copy MLAs
 	var total = filteredMLAs.length;
@@ -478,8 +534,10 @@ $(function() {
 	    setTotal(list.length);
 
 	    $MLA_List.empty();
+	    $('.columns').empty();
 	    $.each(list, function (index, value) {
 	        $MLA_List.append($('<li/>').text(list[index].Name));
+	        $('.columns').append(list[index].$img);
 	    });
 	};
 	var setTotal = function (value) {
@@ -600,31 +658,49 @@ $(function() {
 	    applyFilter();
 	};
 
+	function preload(arrayOfImages) {
+    	$(arrayOfImages).each(function (index) {
+    		//console.log(index);
+    		MLAs[index].$img = $('<img />')
+    			.attr('src',this)
+    			.attr('id', 'img_' + index)
+    			.addClass('headshot');
+
+    		MLAs[index].$img.appendTo('.columns'); //.css('display','none');
+    	});
+    	filteredMLAs = MLAs.slice(0);
+	}
+
 	$('#reset').click(function(){
 	    //console.log('reset form');
 		resetAll();    
 	});
 
+
 	$(function () {
 		resetAll();
+		preload(_.pluck(MLAs, 'img_src'));
 	    refreshList();
 	});
 
 	// Shows a popup with MLA information
-	$(".headshot").click(function(){
-		var idx = $(this).index();
-
+	$(document).on('click', ".headshot", function(){
+		var id = $(this).attr('id'); //index();
+		var idx = id.split('_')[1];
+		//console.log(idx);
 		$(".tooltipName").html(MLAs[idx].Name);
 		$(".tooltipParty").html(MLAs[idx].Party).prepend("<strong>Party: </strong>");
 		$(".tooltipConstuency").html(MLAs[idx].Constuency).prepend("<strong>Constuency: </strong>");
 		$(".tooltipEthnicity").html(MLAs[idx].Ethnicity).prepend("<strong>Ethnicity: </strong>");
 		$(".tooltipAge").html(MLAs[idx].Age).prepend("<strong>Age: </strong>").append(" years old");
+		showTooltip($(this));
 	});
 
 	// Positioning of the tooltips
-	$('img').click(function(){
-	    var img = $(this);
-
+	//$('img').click(function(){
+	var showTooltip = function(img) {
+	    //var img = $(this);
+	    //console.log(img);
 	    var $tooltip = $('.tooltip')
 	    .show(100)
 	    .css({
@@ -633,7 +709,7 @@ $(function() {
 	    });
 
 	    $tooltip.stop(true, true).delay(2000).fadeOut('slow'); // auto-close after 2 seconds
-	});
+	}//);
 
 	// If window resizes, hide tooltip
 	$( window ).resize(function() {
