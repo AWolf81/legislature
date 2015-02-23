@@ -1,5 +1,7 @@
 $(function() {
 
+	console.log('scriptjs loaded and DOM ready');
+
 	// Numbers
 	var total = 56;
 	var male = 41;
@@ -13,7 +15,7 @@ $(function() {
 	var metis = null;
 	var asian = null;
 
-	var $total = $('#total');
+	var $total = $('#count');
 	var $MLA_List = $('#MLA_List');
 
 	// MLAs
@@ -557,8 +559,8 @@ $(function() {
 	};
 
 	$('#Male, #Female').click(function () {
-	    //console.log(this.id);
-	    removeFilter(gender, this.id=='Male'? 'Female': 'Male'); // remove not active filter
+	    // console.log(this);
+	    removeFilter(gender, this.id =='Male'? 'Female': 'Male'); // remove not active filter
 	    setFilter(gender, this.id);
 	});
 
@@ -584,21 +586,27 @@ $(function() {
 	    }
 	});
 
-	$('.Age').click(function() {
+	$('.age').click(function() {
+		//console.log(this);
 	    removeFilter(age, 35); // improvement of remove filter required, e.g. remove all age filters
 	    removeFilter(age, 36);
 	    removeFilter(age, 65);
 	    setFilter(age, parseInt(this.value));
 	});
 
-	$('#reset').click(function(){
-	    //console.log('reset form');
-	    activeFilters = [];
+	var resetAll = function() {
+		activeFilters = [];
 	    $(':checkbox, :radio').attr('checked', false);
 	    applyFilter();
+	};
+
+	$('#reset').click(function(){
+	    //console.log('reset form');
+		resetAll();    
 	});
 
 	$(function () {
+		resetAll();
 	    refreshList();
 	});
 
@@ -615,26 +623,34 @@ $(function() {
 
 	// Positioning of the tooltips
 	$('img').click(function(){
-
 	    var img = $(this);
 
-	    $('.tooltip')
+	    var $tooltip = $('.tooltip')
 	    .show(100)
 	    .css({
 	        top: img.offset().top + img.height(),
 	        left: img.offset().left
 	    });
+
+	    $tooltip.stop(true, true).delay(2000).fadeOut('slow'); // auto-close after 2 seconds
+	});
+
+	// If window resizes, hide tooltip
+	$( window ).resize(function() {
+	 	$(".tooltip").fadeOut("slow")
 	});
 
 	// Bounce and show result
+	
 	$(".rect").click(function(){
-		console.log("Bounce test");
+		// console.log("Bounce test");
 		$(".others").fadeIn("slow");
 		$(".others").effect( "bounce",
-			{times:3}, 600 );
+			{times: 3}, 600 );
 	});
 
 	// This hides the footer on click when closed
+	
 	$(".crossContainer").click(function(){
 		$("footer").slideUp("slow", function(){
 			console.log("No feedback makes us sad.");
@@ -652,12 +668,14 @@ $(function() {
 	});
 
 	// If clicked, show next step
+	
 	$(".homescreen").click(function(){
 		$(".install").hide();
 		$(".add").show();
 	});
 
 	// I heard you like smooth scroll
+	
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var target = $(this.hash);

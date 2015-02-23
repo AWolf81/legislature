@@ -34,23 +34,24 @@
 				<div class="gender">
 					<p class="category">Gender</p>
 					<div class="options">
-						<input type="radio" id="male" class="button rect G1" name="gender"></input>
-						<label for="male">Male</label>
-						<input type="radio" id="female" class="button rect G1" name="gender"></input>
-						<label for="female">Female</label>
+						<input type="radio" id="Male" class="button rect G1" name="gender"></input>
+						<label for="Male">Male</label>
+						
+						<input type="radio" id="Female" class="button rect G1" name="gender"></input>
+						<label for="Female">Female</label>
 					</div><!-- /.options -->
 				</div><!-- /.gender -->
 
-				<div class="age">
+				<div>
 					<p class="category">Age</p>
 					<div class="options">
-						<input type="radio" id="a35" class="button rect A1" name="age"></input>
+						<input class="age" type="radio" id="a35" class="button rect A1" name="age" value="35"></input>
 						<label for="a35">Under 35</label>
 
-						<input type="radio" id="a36" class="button rect A2" name="age"></input>
+						<input class="age" type="radio" id="a36" class="button rect A2" name="age" value="36"></input>
 						<label for="a36">36-64</label>
 
-						<input type="radio" id="a37" class="button rect A3" name="age"></input>
+						<input class="age" type="radio" id="a37" class="button rect A3" name="age" value="65"></input>
 						<label for="a37">65+</label>
 					</div><!-- /.options -->
 				</div><!-- /.age -->
@@ -144,7 +145,7 @@
 			</figure>
 
 			<section class="others">
-				<h2>There are <span class="number">56</span> MLAs that fit in your demographic</h2>
+				<h2>There are <span class="number" id="count">56</span> MLAs that fit in your demographic</h2>
 				<figcaption class="special">(Does not include the single vacant seat for the Pas or the Speaker.)</figcaption>
 				<!-- <button id="reset">Try again</button> -->
 			</section>
@@ -179,7 +180,7 @@
 					</footer>
 
 					<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+					<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 					<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 					<script src="assets/js/scripts.js"></script>
 				</body>
