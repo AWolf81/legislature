@@ -13,7 +13,7 @@ $(function() {
 	var metis = null;
 	var asian = null;
 
-	var $total = $('#total');
+	var $total = $('#count');
 	var $MLA_List = $('#MLA_List');
 
 	// MLAs
@@ -558,7 +558,7 @@ $(function() {
 
 	$('#Male, #Female').click(function () {
 	    //console.log(this.id);
-	    removeFilter(gender, this.id=='Male'? 'Female': 'Male'); // remove not active filter
+	    removeFilter(gender, this.id =='Male'? 'Female': 'Male'); // remove not active filter
 	    setFilter(gender, this.id);
 	});
 
@@ -615,7 +615,6 @@ $(function() {
 
 	// Positioning of the tooltips
 	$('img').click(function(){
-
 	    var img = $(this);
 
 	    $('.tooltip')
@@ -626,12 +625,17 @@ $(function() {
 	    });
 	});
 
+	// If window resizes, hide tooltip
+	$( window ).resize(function() {
+	 	$(".tooltip").fadeOut("slow")
+	});
+
 	// Bounce and show result
 	$(".rect").click(function(){
-		console.log("Bounce test");
+		// console.log("Bounce test");
 		$(".others").fadeIn("slow");
 		$(".others").effect( "bounce",
-			{times:3}, 600 );
+			{times: 3}, 600 );
 	});
 
 	// This hides the footer on click when closed
